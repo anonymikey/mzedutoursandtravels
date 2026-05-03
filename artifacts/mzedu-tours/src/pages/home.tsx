@@ -4,6 +4,7 @@ import { useEffect } from "react"
 import Navbar from "@/components/navbar"
 import Hero from "@/components/hero"
 import About from "@/components/about"
+import BigFive from "@/components/big-five"
 import Services from "@/components/services"
 import Fleet from "@/components/fleet"
 import Packages from "@/components/packages"
@@ -36,6 +37,7 @@ export default function Home() {
       <main className="w-full pt-16">
         <Hero />
         <About />
+        <BigFive />
         <Services />
         <Fleet />
         <Packages />

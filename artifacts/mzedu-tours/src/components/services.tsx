@@ -110,10 +110,17 @@ function DestinationCard({ destination }: { destination: typeof destinations[0] 
             ))}
           </div>
 
-          <button className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 border border-white/30 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 group/btn backdrop-blur-sm">
+          <a
+            href="#packages"
+            onClick={(e) => {
+              e.stopPropagation()
+              document.getElementById("packages")?.scrollIntoView({ behavior: "smooth" })
+            }}
+            className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 border border-white/30 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 group/btn backdrop-blur-sm"
+          >
             Explore Destination
             <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-          </button>
+          </a>
         </div>
       </div>
     </div>

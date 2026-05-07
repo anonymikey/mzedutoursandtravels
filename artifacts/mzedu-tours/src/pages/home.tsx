@@ -8,6 +8,7 @@ import BigFive from "@/components/big-five"
 import Services from "@/components/services"
 import Fleet from "@/components/fleet"
 import Packages from "@/components/packages"
+import Rates from "@/components/rates"
 import YouTubeSection from "@/components/youtube-section"
 import Booking from "@/components/booking"
 import Contact from "@/components/contact"
@@ -41,6 +42,7 @@ export default function Home() {
         <Services />
         <Fleet />
         <Packages />
+        <Rates />
         <YouTubeSection />
         <Booking />
         <Contact />

@@ -10,12 +10,24 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">M</span>
-              </div>
-              <span className="font-serif text-xl font-bold text-white">MZEDU</span>
-            </div>
+            <a
+              href="/"
+              onClick={(e) => {
+                e.preventDefault()
+                window.scrollTo({ top: 0, behavior: "smooth" })
+              }}
+              className="inline-block mb-4 hover:opacity-90 transition-opacity"
+              aria-label="Back to top"
+            >
+              <img
+                src="/mzedu-logo.png"
+                alt="MZEDU Tours and Travels"
+                className="h-16 w-auto"
+              />
+            </a>
+            <p className="font-serif text-base font-bold text-white tracking-wide mb-2">
+              MZEDUTOURSANDTRAVELS
+            </p>
             <p className="text-sm text-gray-300">
               Premium safari tours and transport services across Kenya since 2010.
             </p>
